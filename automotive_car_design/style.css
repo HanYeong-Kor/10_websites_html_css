@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  padding: 1rem;
   margin: 0 auto;
   max-width: 100%;
   width: 1000px;
@@ -24,12 +25,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
 }
 
 .content {
   font-size: 2rem;
   margin: auto;
+  max-width: 100%;
 }
 
 .content h1 {
@@ -44,7 +46,7 @@ nav {
 }
 
 nav .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 nav ul {
@@ -55,6 +57,8 @@ nav ul {
 
 nav li a {
   color: white;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .selected {
@@ -66,4 +70,41 @@ nav li a {
   color: white;
   padding: 1rem;
   text-decoration: none;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer strong {
+  color: #00c2ff;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+  nav li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  nav .highlight {
+    display: none;
+  }
 }
