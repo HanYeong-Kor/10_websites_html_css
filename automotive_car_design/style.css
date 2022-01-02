@@ -10,6 +10,12 @@ body {
   margin: 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
 header {
   background-image: url("car-bg.jpg");
   background-size: cover;
@@ -21,14 +27,14 @@ header {
   min-height: 100vh;
 }
 
-header .container {
-  margin: auto 0;
+.content {
+  font-size: 2rem;
+  margin: auto;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 1000px;
+.content h1 {
+  color: #00c2ff;
+  margin-bottom: 0;
 }
 
 nav {
@@ -49,8 +55,6 @@ nav ul {
 
 nav li a {
   color: white;
-  padding: 1rem;
-  text-decoration: none;
 }
 
 .selected {
@@ -59,4 +63,7 @@ nav li a {
 
 .highlight {
   background-color: #00c2ff;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
 }
