@@ -42,7 +42,6 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 nav .logo {
@@ -75,7 +74,7 @@ nav li a {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 footer ul {
@@ -95,9 +94,13 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
+  .content {
+    font-size: 1.5rem;
+    margin: 2rem auto 0;
+  }
+
   nav ul {
     flex-direction: column;
-    align-self: flex-end;
   }
 
   nav li:not(:last-child) {
@@ -106,5 +109,15 @@ footer p {
 
   nav .highlight {
     display: none;
+  }
+
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer li {
+    margin: 1rem;
+    text-align: center;
   }
 }
